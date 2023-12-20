@@ -17,13 +17,13 @@ int main(){
     int rev=0;
     int temp=n;
     int count=0;
-    while(temp>0){
+    while(temp!=0){
         count=count+1;
         temp=temp/10;
     }
     int i=count-1;
     temp=n;
-    while(n>0){
+    while(n!=0){
         int digit=n%10;
         rev=rev+digit*POW(10,i);
         n=n/10;
